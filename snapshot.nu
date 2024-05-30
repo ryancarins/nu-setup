@@ -1,13 +1,13 @@
 let isWindows = (sys).host.name == 'Windows'
 
+cp ~/.config/starship.toml ./configs/starship.toml
+
 #Copy nushell config
-cp ./configs/config.nu $nu.config-path
+cp $nu.config-path ./configs/config.nu
 
 #Nvim Config
 if $isWindows {
-	mkdir ($env.LOCALAPPDATA + \nvim)
-	cp ./configs/init.lua ($env.LOCALAPPDATA + \nvim)
+	cp ($env.LOCALAPPDATA + \nvim\init.lua) ./configs/init.lua
 } else {
-	mkdir ~/.config/nvim
-	cp ./configs/init.lua ~/.config/nvim
+	cp ~/.config/nvim ./configs/init.lua
 }
