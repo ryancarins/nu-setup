@@ -1,4 +1,4 @@
-let isWindows = (sys).host.name == 'Windows'
+let isWindows = (sys host).name == 'Windows'
 
 cp ~/.config/starship.toml ./configs/starship.toml
 

@@ -45,9 +45,6 @@ color_yellow = '#d79921'
 disabled = false
 style = "bg:color_orange fg:color_fg0"
 
-[hostname]
-style = "bg:color_orange fg:color_fg0"
-
 [os.symbols]
 Windows = "󰍲"
 Ubuntu = "󰕈"
@@ -68,6 +65,9 @@ CentOS = ""
 Debian = "󰣚"
 Redhat = "󱄛"
 RedHatEnterprise = "󱄛"
+
+[hostname]
+style = "bg:color_orange fg:color_fg0"
 
 [username]
 show_always = true
